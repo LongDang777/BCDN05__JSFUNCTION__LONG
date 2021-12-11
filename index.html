@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container py-5 ">
+        <h4> BÀi 1: Quản lí tuyển sinh</h4>
+        <form class="row gy-3 align-items-center px-2 mt-4">
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form-input" id="inpDiemChuan" placeholder="Điểm Chuẩn">
+            </div>
+            <div class="col-12 col-lg-4">
+                <select class="form-control form-input" id="aria">
+                    <option value="0">Chọn khu vực</option>
+                    <option value="2">A</option>
+                    <option value="1">B</option>
+                    <option value="0.5">C</option>
+                </select>
+            </div>
+            <div class="col-12 col-lg-4">
+                <select class="form-control form-input" id="user">
+                    <option value="0">Chọn đối tượng</option>
+                    <option value="2.5">1</option>
+                    <option value="1.5">2</option>
+                    <option value="1">3</option>
+                </select>
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form-input" id="inpScore1" placeholder="Điểm môn thứ 1">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form-input" id="inpScore2" placeholder="Điểm môn thứ 2">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form-input" id="inpScore3" placeholder="Điểm môn thứ 3">
+            </div>
+            <div class="col-12">
+                <button onclick="tinhDiem()" class="btn btn-primary me-1 mb-1" type="button" id="btnResult">Kết Quả</button>
+            </div>
+            <div class="alert alert-success" role="alert">
+                👉<span id="txtResult"></span>
+            </div>
+        </form>
+
+        <h4 class=" mt-5"> BÀi 2: Tính tiền Điện </h4>
+        <form class="row gy-3 align-items-center px-2 mt-4">
+
+            <div class="col-12 col-lg-4">
+                <input type="text" class="form-control form-input" id="inpHoTen" placeholder="Họ Tên">
+            </div>
+            
+            <div class="col-12 col-lg-4">
+                <input type="number" class="form-control form-input" id="inpKw" placeholder="Nhập Số KW">
+            </div>
+                      
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" type="button" id="btnTinh">Tính Tiền Điện</button>
+            </div>
+
+            <div class="alert alert-success" role="alert">
+                👉<span id="txtTienDien"></span>
+            </div>
+        </form>
+    </div>
+    
+
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
