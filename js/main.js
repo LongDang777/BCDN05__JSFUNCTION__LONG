@@ -28,7 +28,10 @@ function tinhDiem(){
     var u = Number(document.getElementById('user').value);
 
     var  o = a + b +c + k + u;
-    if (a <=0 || b <=0 || c <=0) {
+    if (t == 0){
+        document.getElementById('txtResult').innerHTML = ' Mời nhập điểm chuẩn';
+    }
+    else if(a <=0 || b <=0 || c <=0) {
         document.getElementById('txtResult').innerHTML = ' Bạn đã rớt. do có môn nhỏ hơn hoặc bằng 0. tổng điểm : '+ o;
     }else {
         if ( o >= t) {
@@ -36,7 +39,6 @@ function tinhDiem(){
             
         }else {
         document.getElementById('txtResult').innerHTML = ' Bạn đã rớt. tổng điểm : '+ o;
-    
         }
     }
 }
